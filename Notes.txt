@@ -1,0 +1,38 @@
+//buildScripts/Server.js
+
+//BACKEND: 
+// web server starting point 
+// serves content in the src folder
+
+/* commonJS (if using Node.js) CANNOT BE USED in aproject type=module
+const express = require("express")
+const path = require("path")*/
+
+// ES6 modular referencing (recommended and newer format)
+/*
+STUPID!! 
+iT DIDN'T WARN OF ERROR: 
+(node:6084) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
+(Use `node --trace-warnings ...` to show where the warning was created)
+C:\PROJECTS\LEARN\Pluralsight-JS-Dev-Toolkit\buildScripts\Server.js:10
+import open from "open"
+^^^^^^
+
+STUPID AGAIN!!! Why is it throwing the error: 
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module 'C:\PROJECTS\LEARN\Pluralsight-JS-Dev-Toolkit\webpack.config.dev' imported from C:\PROJECTS\LEARN\Pluralsight-JS-Dev-Toolkit\buildScripts\Server.js
+    at finalizeResolution (internal/modules/esm/resolve.js:285:11)
+    at moduleResolve (internal/modules/esm/resolve.js:708:10)
+    at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:819:11)
+    at Loader.resolve (internal/modules/esm/loader.js:89:40)
+    at Loader.getModuleJob (internal/modules/esm/loader.js:242:28)
+    at ModuleWrap.<anonymous> (internal/modules/esm/module_job.js:73:40)
+    at link (internal/modules/esm/module_job.js:72:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+... AT THE END: 
+now launch the website by calling node buildScripts/Server.js
+
+
+*/
+
+
